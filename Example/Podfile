@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'XAnimation_Example' do
+  pod 'XAnimation', :path => '../'
+
+  target 'XAnimation_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
