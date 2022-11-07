@@ -18,27 +18,27 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Use XAnimation you can run lottie file effect on yourself view or layer. that means whatever view or layer exsits can attach lottie animation effect without modify your own logic. it's cool?
                        DESC
 
-  s.homepage         = 'https://github.com/wangxiyuan/XAnimation'
+  s.homepage         = 'https://github.com/JDFED/XAnimation'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'Apache License 2.0', :file => 'LICENSE' }
   s.author           = { 'wangxiyuan' => 'wangxiyuan613@163.com' }
-  s.source           = { :git => 'https://coding.wangxiyuan/opensource_bigfe/XAnimation.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/JDFED/XAnimation.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'XAnimation/Classes/**/*'
-  
+  s.resources = 'XAnimation/Classes/**/*'
   # s.resource_bundles = {
   #   'XAnimation' => ['XAnimation/Assets/*.png']
   # }
 
   s.static_framework  =  true
 #  # arc和mrc选项
-#  s.requires_arc = true
+  s.requires_arc = true
 #  # 链接设置 重要
 #  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
   
