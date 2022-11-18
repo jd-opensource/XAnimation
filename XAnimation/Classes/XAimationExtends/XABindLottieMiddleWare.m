@@ -117,9 +117,11 @@
                     }
                     
                     // need buchang
-                    CGPoint lotAnchor =  CGPointMake(layerWidth > 0 ? anchorPt.x  / layerWidth : 0, layerHeight > 0 ? anchorPt.x / layerHeight : 0);
+                    CGPoint lotAnchor =  CGPointMake(layerWidth > 0
+                                                     ? anchorPt.x  / layerWidth : 0,
+                                                     layerHeight > 0 ? anchorPt.y / layerHeight : 0);
                    if (bindLayer.anchorPoint.x != lotAnchor.x
-                       &&
+                       ||
                        bindLayer.anchorPoint.y != lotAnchor.y) {
                        CGPoint leftTopPos = CGPointMake(bindLayer.position.x - bindLayer.bounds.size.width * bindLayer.anchorPoint.x, bindLayer.position.y - bindLayer.bounds.size.height * bindLayer.anchorPoint.y);
                        CGPoint lotAnchorPos = CGPointMake(leftTopPos.x + bindLayer.bounds.size.width * lotAnchor.x, leftTopPos.y + bindLayer.bounds.size.height * lotAnchor.y);
